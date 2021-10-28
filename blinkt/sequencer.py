@@ -16,7 +16,7 @@ while True:
 
 # White
 #		set_pixel(i, 255, 255, 255)
-		set_brightness(0.4)
+		set_brightness(0.19)
 
 		show()
 		time.sleep(time_delay)
