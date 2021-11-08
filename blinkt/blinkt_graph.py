@@ -21,6 +21,7 @@ def show_graph(v, r, g, b):
 
     blinkt.show()
 
+#blinkt.set_brightness(1)
 blinkt.set_brightness(0.033)
 
 try:
