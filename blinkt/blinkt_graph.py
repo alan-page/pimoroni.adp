@@ -39,7 +39,7 @@ try:
 #        print "(math.sin(t) + 1 / 2: ", v
 #        print round(v, 1)
         dots = v * 10
-        print '* ' * int(dots) # Print an asterisk for each 0.1 rise in the sin(t) value
+#        print '0 ' * int(dots) # Print an asterisk for each 0.1 rise in the sin(t) value
 #        bluevalue = random.randint(0, 15)
 #        redvalue = random.randint(0, 15)
         show_graph(v, 150, 0, 90)
