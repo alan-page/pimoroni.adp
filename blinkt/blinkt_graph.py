@@ -23,6 +23,7 @@ def show_graph(v, r, g, b):
 
 #blinkt.set_brightness(1)
 blinkt.set_brightness(0.033)
+#blinkt.set_brightness(0.2)
 
 try:
     while True: # Run constantly
@@ -42,7 +43,7 @@ try:
 #        print '0 ' * int(dots) # Print an asterisk for each 0.1 rise in the sin(t) value
 #        bluevalue = random.randint(0, 15)
 #        redvalue = random.randint(0, 15)
-        show_graph(v, 150, 0, 90)
+        show_graph(v, 90, 0, 150)
         time.sleep(0.1)
 except KeyboardInterrupt:
     pass
