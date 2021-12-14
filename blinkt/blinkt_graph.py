@@ -43,7 +43,7 @@ try:
 #        print '0 ' * int(dots) # Print an asterisk for each 0.1 rise in the sin(t) value
 #        bluevalue = random.randint(0, 15)
 #        redvalue = random.randint(0, 15)
-        show_graph(v, 90, 0, 250)
+        show_graph(v, 70, 0, 150)
         time.sleep(0.1)
 except KeyboardInterrupt:
     pass
