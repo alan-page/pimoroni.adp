@@ -8,3 +8,8 @@ name = days['properties']['periods'][2]['name']
 temp = days['properties']['periods'][2]['temperature']
 
 print(name + ": " + str(temp))
+
+if temp < 50:
+    print "Ooh, it's going to be cool. Better bring a sweater."
+
+
