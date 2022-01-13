@@ -12,4 +12,8 @@ print(name + ": " + str(temp))
 if temp < 40:
     print "It's going to be cold tomorrow. Better wear a coat."
 
+if temp < 30:
+    print "Better make it a warm coat."
 
+if temp < 20:
+    print "Remember that really heavy parka..."
