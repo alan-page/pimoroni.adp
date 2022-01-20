@@ -17,3 +17,6 @@ if temp < 30:
 
 if temp < 20:
     print "Remember that really heavy parka..."
+
+if temp < 10:
+    print "...And long underwear..."
