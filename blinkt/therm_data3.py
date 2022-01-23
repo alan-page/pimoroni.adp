@@ -41,4 +41,23 @@ while True:
         time.sleep(5)
         clear()
 
-    time.sleep(1800)
+    print " "
+    print "Next update in 30 minutes"
+    time.sleep(300)
+    
+    print "Next update in 25 minutes"
+    time.sleep(300)
+
+    print "Next update in 20 minutes"
+    time.sleep(300)
+
+    print "Next update in 15 minutes"
+    time.sleep(300)
+
+    print "Next update in 10 minutes"
+    time.sleep(300)
+
+    print "Next update in 05 minutes"
+    time.sleep(300)
+    print " "
+
