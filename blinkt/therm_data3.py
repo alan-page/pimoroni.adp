@@ -5,14 +5,17 @@ from blinkt import set_pixel, set_brightness, show, clear
 import time
 
 while True:
-    print "Trying the weather API..."
-    response = requests.get("http://api.weather.gov/gridpoints/OKX/51,69/forecast/")
-    print "Add a try/catch here in case the request fails."
-    print " "
-    days = json.loads(response.text)
-
-    name = days['properties']['periods'][1]['name']
-    temp = days['properties']['periods'][1]['temperature']
+    while True:
+        try:
+            print "Trying the weather API..."
+            response = requests.get("http://api.weather.gov/gridpoints/OKX/51,69/forecast/")
+            days = json.loads(response.text)
+            name = days['properties']['periods'][1]['name']
+            temp = days['properties']['periods'][1]['temperature']
+            break
+        except:
+            print "Didn't get a response. Trying again."
+            print " "
 
     print(name + ": " + str(temp))
 
