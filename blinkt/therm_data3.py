@@ -28,6 +28,9 @@ while True:
             shortforecast0 = days['properties']['periods'][0]['shortForecast']
             shortforecast1 = days['properties']['periods'][1]['shortForecast']
             shortforecast2 = days['properties']['periods'][2]['shortForecast']
+            starttime0 = days['properties']['periods'][0]['startTime']
+            starttime1 = days['properties']['periods'][1]['startTime']
+            starttime2 = days['properties']['periods'][2]['startTime']
             break
         except:
             print " "
@@ -36,14 +39,17 @@ while True:
 
     print(name0 + ": " + str(temp0) + " deg F")
     print("Forecast:  " + shortforecast0)
+    print starttime0
     print " "
 
     print(name1 + ": " + str(temp1) + " deg F")
     print("Forecast:  " + shortforecast1)
+    print starttime1
     print " "
 
     print(name2 + ": " + str(temp2) + " deg F")
     print("Forecast:  " + shortforecast2)
+    print starttime2
     print " "
 
     if 41 < temp1 < 50:
