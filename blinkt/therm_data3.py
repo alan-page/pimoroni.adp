@@ -52,35 +52,38 @@ while True:
     print starttime2
     print " "
 
-    if 41 < temp1 < 50:
+    if  temp1 >= 50:
+        print "It's going to be 50+ - Winter must be over!"
+
+    if 41 < temp1 <= 50:
         print "It's going to be almost temperate. Probably sweater weather."
         set_pixel(4, 0, 20, 15)
         show()
         time.sleep(5)
         clear()
 
-    if 31 < temp1 < 40:
+    if 31 < temp1 <= 40:
         print "It's going to be cold. Better wear a coat."
         set_pixel(3, 0, 15, 15)
         show()
         time.sleep(5)
         clear() 
 
-    if 21 < temp1 < 30:
+    if 21 < temp1 <= 30:
         print "Wear the coat. Better make it a warm coat."
         set_pixel(2, 0, 10, 15)
         show()
         time.sleep(5)
         clear()
 
-    if 11 < temp1 < 20:
+    if 11 < temp1 <= 20:
         print "Remember that really heavy parka? Bring it."
         set_pixel(1, 0, 5, 15)
         show()
         time.sleep(5)
         clear()
 
-    if temp1 < 10:
+    if temp1 <= 10:
         print "Brr! Bring the parka and wear long underwear..."
         set_pixel(0, 0, 0, 15)
         show()
