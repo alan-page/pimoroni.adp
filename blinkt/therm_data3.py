@@ -37,19 +37,16 @@ while True:
             print "Didn't get a response. Trying again."
             print " "
 
-    print(name0 + ": " + str(temp0) + " deg F")
+    print(starttime0 + " " + name0 + ": " + str(temp0) + " deg F")
     print("Forecast:  " + shortforecast0)
-    print starttime0
     print " "
 
-    print(name1 + ": " + str(temp1) + " deg F")
+    print(starttime1 + " " +name1 + ": " + str(temp1) + " deg F")
     print("Forecast:  " + shortforecast1)
-    print starttime1
     print " "
 
-    print(name2 + ": " + str(temp2) + " deg F")
+    print(starttime2 + " " + name2 + ": " + str(temp2) + " deg F")
     print("Forecast:  " + shortforecast2)
-    print starttime2
     print " "
 
     if  temp1 >= 50:
