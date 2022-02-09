@@ -45,9 +45,10 @@ while True:
     print("Forecast:  " + shortforecast1)
     print " "
 
-    print(starttime2 + " " + name2 + ": " + str(temp2) + " deg F")
-    print("Forecast:  " + shortforecast2)
-    print " "
+# Don't print third timeblock
+#    print(starttime2 + " " + name2 + ": " + str(temp2) + " deg F")
+#    print("Forecast:  " + shortforecast2)
+#    print " "
 
     if  temp1 >= 50:
         print "It's going to be 50+ - Winter must be over!"
