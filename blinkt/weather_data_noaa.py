@@ -4,6 +4,10 @@ import requests
 from blinkt import set_pixel, set_brightness, show, clear
 import time
 
+import weather_constants
+
+print weather_constants.NOAA_KEY
+
 while True:
     while True:
         try:
