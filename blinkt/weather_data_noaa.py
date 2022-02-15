@@ -6,7 +6,7 @@ import time
 
 import weather_constants
 
-print weather_constants.NOAA_KEY
+print weather_constants.NOAA_API_TOKEN
 
 while True:
     while True:
@@ -57,28 +57,28 @@ while True:
     if  temp1 >= 50:
         print "It's going to be 50+ - Winter must be over!"
 
-    if 41 < temp1 <= 50:
+    if 40 < temp1 <= 50:
         print "It's going to be almost temperate. Probably sweater weather."
         set_pixel(4, 0, 20, 15)
         show()
         time.sleep(5)
         clear()
 
-    if 31 < temp1 <= 40:
+    if 30 < temp1 <= 40:
         print "It's going to be cold. Better wear a coat."
         set_pixel(3, 0, 15, 15)
         show()
         time.sleep(5)
         clear() 
 
-    if 21 < temp1 <= 30:
+    if 20 < temp1 <= 30:
         print "Wear the coat. Better make it a warm coat."
         set_pixel(2, 0, 10, 15)
         show()
         time.sleep(5)
         clear()
 
-    if 11 < temp1 <= 20:
+    if 10 < temp1 <= 20:
         print "Remember that really heavy parka? Bring it."
         set_pixel(1, 0, 5, 15)
         show()
