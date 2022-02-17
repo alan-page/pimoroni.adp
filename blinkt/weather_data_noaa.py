@@ -7,6 +7,7 @@ import time
 import weather_constants
 
 print weather_constants.NOAA_API_TOKEN
+print weather_constants.NOAA_STATION_ID
 
 while True:
     while True:
