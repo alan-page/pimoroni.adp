@@ -4,12 +4,19 @@ import requests
 from blinkt import set_pixel, set_brightness, show, clear
 import time
 
+# from datetime import datetime
+
 import weather_constants
 
 print weather_constants.NOAA_API_TOKEN
 print weather_constants.NOAA_STATION_ID
 
-while True:
+response = {}
+response = requests.get("https://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=TAVG&limit=5&stationid=weather_constants.NOAA_STATION_ID&startdate2022-02-13&enddate=2022-02-13", headers={'token':weather_constants.NOAA_API_TOKEN})
+d = json.loads(response.text)
+
+
+while False:
     while True:
         try:
             print "Trying the weather API..."
