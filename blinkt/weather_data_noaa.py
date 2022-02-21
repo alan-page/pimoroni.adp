@@ -15,7 +15,6 @@ response = {}
 #response = requests.get("https://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=TAVG&limit=5&stationid=weather_constants.NOAA_STATION_ID&startdate=2022-02-13&enddate=2022-02-14", headers={'token':weather_constants.NOAA_API_TOKEN})
 response = requests.get("https://www.ncdc.noaa.gov/cdo-web/api/v2/datasets", headers={'token':weather_constants.NOAA_API_TOKEN})
 d = json.loads(response.text)
-print d
 
 while False:
     while True:
