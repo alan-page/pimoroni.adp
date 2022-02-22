@@ -52,6 +52,10 @@ while True:
 
     if  temp1 >= 50:
         print "It's going to be 50+ - Winter must be over!"
+        set_pixel(5, 10, 20, 15)
+        show()
+        time.sleep(5)
+        clear()
 
     if 40 < temp1 <= 50:
         print "It's going to be almost temperate. Probably sweater weather."
@@ -107,4 +111,5 @@ while True:
     print "Next update in 1 minute"
     time.sleep(60)
     print " "
+
 
