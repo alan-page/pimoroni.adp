@@ -50,8 +50,15 @@ while True:
 #    print("Forecast:  " + shortforecast2)
 #    print " "
 
-    if  temp1 > 50:
-        print "It's going to be 50+ ...winter must be over!"
+    if 50 < temp1 <= 60:
+        print "It's going to be over 60!"
+        set_pixel(6, 20, 20, 10)
+        show()
+        time.sleep(5)
+        clear()
+        
+    if 50 < temp1 <= 60:
+        print "It's going to be mild ...winter must be over!"
         set_pixel(5, 10, 20, 15)
         show()
         time.sleep(5)
