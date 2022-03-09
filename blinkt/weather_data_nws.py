@@ -38,11 +38,11 @@ while True:
             print " "
 
     print(starttime0 + " " + name0 + ": " + str(temp0) + " deg F")
-    print("Forecast:  " + shortforecast0)
+    print("Now forecast:  " + shortforecast0)
     print " "
 
     print(starttime1 + " " +name1 + ": " + str(temp1) + " deg F")
-    print("Forecast:  " + shortforecast1)
+    print("Next forecast:  " + shortforecast1)
     print " "
 
 # Don't print third timeblock
