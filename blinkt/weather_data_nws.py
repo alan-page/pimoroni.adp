@@ -58,7 +58,7 @@ while True:
         clear()
         
     if 50 < temp1 <= 60:
-        print "It's going to be mild ...winter must be over!"
+        print "It's going to be mild...winter must be over!"
         set_pixel(5, 10, 20, 15)
         show()
         time.sleep(5)
