@@ -87,17 +87,34 @@ while True:
 
     if 10 < temp1 <= 20:
         print "Remember that really heavy parka? Bring it."
+        for x in range(5):
+            set_pixel(1, 0, 5, 15)
+            show()
+            time.sleep(.5)
+            clear()
+            # For some reason clear() doesn't blank the display here
+            set_pixel(1, 0, 0, 0)
+            show()
+            time.sleep(.5)
         set_pixel(1, 0, 5, 15)
         show()
-        time.sleep(5)
-        clear()
 
-    if temp1 <= 10:
+    if 0 < temp1 <= 10:
         print "Brr! Bring the parka and wear long underwear..."
         set_pixel(0, 0, 0, 15)
         show()
         time.sleep(5)
         clear()
+
+    if temp1 <= 0:
+        print "Oh boy! Below zero--add the balaclava."
+        for x  in range(5):
+            set_pixel(0, 0, 0, 15)
+            show()
+            time.sleep(0.5)
+            # Might need a show() blank pixel here; see < 20 above
+            clear()
+            time.sleep(0.5)
 
     print " "
     print "Next update in 6 minutes"
