@@ -9,7 +9,7 @@ while True:
         try:
             print "Trying the weather API..."
             print " "
-            
+
             # Had to add this initialization statement after putting the request in a try/catch, because
             # it seemed to have been adding each request results to the beginning of the dict item
             #
@@ -37,9 +37,10 @@ while True:
             print "Didn't get a response. Trying again."
             print " "
 
-    print(starttime0 + " " + name0 + ": " + str(temp0) + " deg F")
-    print("Now forecast:  " + shortforecast0)
-    print " "
+#Don't print the first timeblock
+#    print(starttime0 + " " + name0 + ": " + str(temp0) + " deg F")
+#    print("Now forecast:  " + shortforecast0)
+#    print " "
 
     print(starttime1 + " " +name1 + ": " + str(temp1) + " deg F")
     print("Next forecast:  " + shortforecast1)
