@@ -51,6 +51,25 @@ while True:
 #    print("Forecast:  " + shortforecast2)
 #    print " "
 
+# Animation to show which temp we're displaying: upward sweep of the LEDs for the daily high?
+# This should really be in a loop...
+    set_pixel(3, 0, 15, 15)
+    show()
+    time.sleep(.1)
+    clear()
+    set_pixel(2, 0, 10, 15)
+    show()
+    time.sleep(.1)
+    clear()
+    set_pixel(1, 0, 5, 15)
+    show()
+    time.sleep(.1)
+    clear()
+    set_pixel(0, 0, 0, 15)
+    show()
+    time.sleep(.1)
+    clear()
+
     if temp1 > 80:
         print "It's going to be over 80!"
         set_pixel(7, 30, 10, 10)
@@ -134,21 +153,6 @@ while True:
             time.sleep(0.5)
 
     print " "
-    print "Next update in 6 minutes"
-    time.sleep(60)
-    
-    print "Next update in 5 minutes"
-    time.sleep(60)
-
-    print "Next update in 4 minutes"
-    time.sleep(60)
-
-    print "Next update in 3 minutes"
-    time.sleep(60)
-
-    print "Next update in 2 minutes"
-    time.sleep(60)
-
     print "Next update in 1 minute"
     time.sleep(60)
     print " "
