@@ -10,13 +10,16 @@ from blinkt import set_pixel, set_brightness, show, clear
 print "import time"
 import time
 
-# LED rgb matrix with zero-based list corresponding to the LEDs
+# LED rgb matrix with zero-based list corresponding to the temp bands
 m = [
     [ 0 , 0, 15],
     [ 0,  5, 15],
     [ 0, 10, 15],
     [ 0, 15, 15],
-    
+    [ 0, 20, 15],
+    [10, 20, 15],
+    [20, 20, 10],
+    [25, 20, 10],
 ]
 print m
 
@@ -69,22 +72,12 @@ while True:
 
 # Animation to show which temp we're displaying: upward sweep of the LEDs for the daily high?
 # This should really be in a loop...
-    set_pixel(3, 0, 15, 15)
-    show()
-    time.sleep(.1)
-    clear()
-    set_pixel(2, 0, 10, 15)
-    show()
-    time.sleep(.1)
-    clear()
-    set_pixel(1, 0, 5, 15)
-    show()
-    time.sleep(.1)
-    clear()
-    set_pixel(0, m[0][0], m[0][1], m[0][2])
-    show()
-    time.sleep(.1)
-    clear()
+
+    for y in range(8):
+        set_pixel(y, m[y-1][0], m[y-1][1], m[y-1][2])
+        show()
+        time.sleep(.1)
+        clear()
 
     if temp1 > 80:
         print "It's going to be over 80!"
