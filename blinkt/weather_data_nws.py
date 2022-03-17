@@ -1,8 +1,24 @@
+print "import json"
 import json
+
+print "import requests"
 import requests
 
+print "import blinkt stuff"
 from blinkt import set_pixel, set_brightness, show, clear
+
+print "import time"
 import time
+
+# LED rgb matrix with zero-based list corresponding to the LEDs
+m = [
+    [ 0 , 0, 15],
+    [ 0,  5, 15],
+    [ 0, 10, 15],
+    [ 0, 15, 15],
+    
+]
+print m
 
 while True:
     while True:
@@ -65,7 +81,7 @@ while True:
     show()
     time.sleep(.1)
     clear()
-    set_pixel(0, 0, 0, 15)
+    set_pixel(0, m[0][0], m[0][1], m[0][2])
     show()
     time.sleep(.1)
     clear()
