@@ -73,10 +73,12 @@ while True:
 # Animation to show which temp we're displaying: upward sweep of the LEDs for the daily high?
 # This should really be in a loop...
 
-    for y in range(8):
-        set_pixel(y, m[y-1][0], m[y-1][1], m[y-1][2])
+    for y in range(7, -1, -1):
+        set_pixel(y, m[y][0], m[y][1], m[y][2])
         show()
-        time.sleep(.1)
+# Print rgb values
+        print m[y]
+        time.sleep(.5)
         clear()
 
     if temp1 > 80:
