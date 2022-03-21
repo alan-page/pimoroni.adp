@@ -65,10 +65,6 @@ while True:
     print("Next forecast:  " + shortforecast1)
     print " "
 
-# Don't print third timeblock
-#    print(starttime2 + " " + name2 + ": " + str(temp2) + " deg F")
-#    print("Forecast:  " + shortforecast2)
-#    print " "
 
 # Animation to show which temp we're displaying: upward sweep of the LEDs for the daily high?
 # This should really be in a loop...
