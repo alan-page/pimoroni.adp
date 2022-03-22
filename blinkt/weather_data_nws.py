@@ -61,6 +61,7 @@ while True:
 #    print("Now forecast:  " + shortforecast0)
 #    print " "
 
+# Print the next forecast block
     print(starttime1 + " " +name1 + ": " + str(temp1) + " deg F")
     print("Next forecast:  " + shortforecast1)
     print " "
