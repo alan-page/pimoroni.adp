@@ -74,9 +74,10 @@ while True:
         set_pixel(y, m[y][0], m[y][1], m[y][2])
         show()
 # Print rgb values
-        print m[y],
+# Do not        print m[y]
         time.sleep(.5)
         clear()
+    print " "
 
     if temp1 > 80:
         print "It's going to be over 80!"
