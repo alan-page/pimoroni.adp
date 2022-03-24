@@ -79,14 +79,13 @@ while True:
         clear()
     print " "
 
-    if temp1 > 80:
+    if temp1 > 90:
+        print "It's going to be over 90!"
+        set_pixel(7, 30, 0, 0)
+        show()
+
+    if 80 <  temp1 <= 90:
         print "It's going to be over 80!"
-        set_pixel(7, 30, 10, 10)
-        show()
-        time.sleep(.5)
-        clear()
-        show()
-        time.sleep(.5)
         set_pixel(7, 30, 10, 10)
         show()
 
@@ -99,48 +98,29 @@ while True:
         print "It's going to be over 60!"
         set_pixel(6, 20, 20, 10)
         show()
-        time.sleep(5)
-        clear()
 
     if 50 < temp1 <= 60:
         print "It's going to be mild...winter must be over!"
         set_pixel(5, 10, 20, 15)
         show()
-        time.sleep(5)
-        clear()
 
     if 40 < temp1 <= 50:
         print "It's going to be almost temperate. Probably sweater weather."
         set_pixel(4, 0, 20, 15)
         show()
-        time.sleep(5)
-        clear()
 
     if 30 < temp1 <= 40:
         print "It's going to be cold. Better wear a coat."
         set_pixel(3, 0, 15, 15)
         show()
-        time.sleep(5)
-        clear() 
 
     if 20 < temp1 <= 30:
         print "Wear the coat. Better make it a warm coat."
         set_pixel(2, 0, 10, 15)
         show()
-        time.sleep(5)
-        clear()
 
     if 10 < temp1 <= 20:
         print "Remember that really heavy parka? Bring it."
-        for x in range(5):
-            set_pixel(1, 0, 5, 15)
-            show()
-            time.sleep(.5)
-            clear()
-            # For some reason clear() doesn't blank the display here
-            set_pixel(1, 0, 0, 0)
-            show()
-            time.sleep(.5)
         set_pixel(1, 0, 5, 15)
         show()
 
@@ -148,18 +128,12 @@ while True:
         print "Brr! Bring the parka and wear long underwear..."
         set_pixel(0, 0, 0, 15)
         show()
-        time.sleep(5)
-        clear()
 
     if temp1 <= 0:
         print "Oh boy! Below zero--add the balaclava."
         for x  in range(5):
-            set_pixel(0, 0, 0, 15)
+            set_pixel(0, 0, 0, 10)
             show()
-            time.sleep(0.5)
-            # Might need a show() blank pixel here; see < 20 above
-            clear()
-            time.sleep(0.5)
 
     print " "
     print "Next update in 1 minute"
