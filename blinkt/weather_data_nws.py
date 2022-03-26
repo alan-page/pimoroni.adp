@@ -21,7 +21,7 @@ m = [
     [20, 20, 10],
     [25, 20, 10],
 ]
-print m
+# print m
 
 while True:
     while True:
