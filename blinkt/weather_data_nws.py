@@ -1,3 +1,5 @@
+# Temp display on the Pimoroni Blinkt eight pixel RGB device
+
 print "import json"
 import json
 
@@ -35,6 +37,7 @@ while True:
             # But it didn't seem to matter. It's as if the API is returning incorrect results,
             # but only 1 out of 10 requests...
             response = {}
+
             #
             response = requests.get("http://api.weather.gov/gridpoints/OKX/51,69/forecast/")
             days = json.loads(response.text)
@@ -74,7 +77,7 @@ while True:
         set_pixel(y, m[y][0], m[y][1], m[y][2])
         show()
 # Print rgb values
-# Do not        print m[y]
+#        print m[y]
         time.sleep(.5)
         clear()
     print " "
