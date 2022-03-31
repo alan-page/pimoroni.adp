@@ -78,7 +78,7 @@ while True:
         show()
 # Print rgb values
 #        print m[y]
-        time.sleep(.5)
+        time.sleep(y * .05)
         clear()
     print " "
 
