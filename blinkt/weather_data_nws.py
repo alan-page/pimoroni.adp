@@ -14,14 +14,14 @@ import time
 
 # LED rgb matrix with zero-based list corresponding to the temp bands
 m = [
-    [ 0 , 0, 15],
-    [ 0,  5, 15],
-    [ 0, 10, 15],
-    [ 0, 15, 15],
-    [ 0, 20, 15],
-    [10, 20, 15],
-    [20, 20, 10],
-    [25, 20, 10],
+    [255, 255, 255],
+    [  0,   0, 255],
+    [  0, 128, 255],
+    [  0, 255, 255],
+    [  0, 255,   0],
+    [255, 255,   0],
+    [255, 128,   0],
+    [255,   0,   0],
 ]
 # print m
 
@@ -78,7 +78,7 @@ while True:
         show()
 # Print rgb values
 #        print m[y]
-        time.sleep(y * .05)
+        time.sleep(.5)
         clear()
     print " "
 
