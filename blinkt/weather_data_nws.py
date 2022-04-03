@@ -14,7 +14,7 @@ import time
 
 # LED rgb matrix with zero-based list corresponding to the temp bands
 m = [
-    [255, 255, 255],
+    [128, 128, 128],
     [  0,   0, 255],
     [  0, 128, 255],
     [  0, 255, 255],
