@@ -1,15 +1,15 @@
 # Temp display on the Pimoroni Blinkt eight pixel RGB device
 
-print "import json"
+#print "import json"
 import json
 
-print "import requests"
+#print "import requests"
 import requests
 
-print "import blinkt stuff"
+#print "import blinkt stuff"
 from blinkt import set_pixel, set_brightness, show, clear
 
-print "import time"
+#print "import time"
 import time
 
 # LED rgb matrix with zero-based list corresponding to the temp bands
