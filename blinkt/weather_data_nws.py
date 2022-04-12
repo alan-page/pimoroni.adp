@@ -43,16 +43,15 @@ while True:
             days = json.loads(response.text)
             name0 = days['properties']['periods'][0]['name']
             name1 = days['properties']['periods'][1]['name']
-            name2 = days['properties']['periods'][2]['name']
+
             temp0 = days['properties']['periods'][0]['temperature']
             temp1 = days['properties']['periods'][1]['temperature']
-            temp2 = days['properties']['periods'][2]['temperature']
+
             shortforecast0 = days['properties']['periods'][0]['shortForecast']
             shortforecast1 = days['properties']['periods'][1]['shortForecast']
-            shortforecast2 = days['properties']['periods'][2]['shortForecast']
+
             starttime0 = days['properties']['periods'][0]['startTime']
             starttime1 = days['properties']['periods'][1]['startTime']
-            starttime2 = days['properties']['periods'][2]['startTime']
             break
         except:
             print " "
