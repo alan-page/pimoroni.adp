@@ -58,11 +58,6 @@ while True:
             print "Didn't get a response. Trying again."
             print " "
 
-#Don't print the first timeblock
-#    print(starttime0 + " " + name0 + ": " + str(temp0) + " deg F")
-#    print("Now forecast:  " + shortforecast0)
-#    print " "
-
 # Print the next forecast block
     print(starttime1 + " " +name1 + ": " + str(temp1) + " deg F")
     print("Next forecast:  " + shortforecast1)
