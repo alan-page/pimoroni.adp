@@ -31,8 +31,7 @@ while True:
             print "Trying the weather API..."
             print " "
 
-            # Had to add this initialization statement after putting the request in a try/catch, because
-            # it seemed to have been adding each request results to the beginning of the dict item
+            # Had to add this initialization statement after putting the request in a try/catch.
             #
             # But it didn't seem to matter. It's as if the API is returning incorrect results,
             # but only 1 out of 10 requests...
