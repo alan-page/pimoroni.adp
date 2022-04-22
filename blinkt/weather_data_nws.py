@@ -28,8 +28,10 @@ m = [
 while True:
     while True:
         try:
-            print "Trying the weather API..."
             print " "
+            print " "
+            print " "
+            print "Trying the weather API..."
 
             # Had to add this initialization statement after putting the request in a try/catch.
             #
@@ -58,9 +60,9 @@ while True:
             print " "
 
 # Print the next forecast block
+    print " "
     print(starttime1 + " " +name1 + ": " + str(temp1) + " deg F")
     print("Next forecast:  " + shortforecast1)
-    print " "
 
 
 # Animation to show which temp we're displaying: upward sweep of the LEDs for the daily high?
@@ -72,8 +74,9 @@ while True:
 #        print m[y]
         time.sleep(.5)
         clear()
-    print " "
 
+
+    print " "
     if temp1 > 90:
         print "It's going to be over 90!"
         set_pixel(7, 30, 0, 0)
@@ -133,6 +136,5 @@ while True:
     print " "
     print "Next update in half a minute"
     time.sleep(30)
-    print " "
 
 
