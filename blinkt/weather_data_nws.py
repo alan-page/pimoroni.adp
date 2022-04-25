@@ -64,6 +64,10 @@ while True:
     print(starttime1 + " " +name1 + ": " + str(temp1) + " deg F")
     print("Next forecast:  " + shortforecast1)
 
+# Clear the display
+
+    clear()
+    show()
 
 # Animation to show which temp we're displaying: upward sweep of the LEDs for the daily high?
 
