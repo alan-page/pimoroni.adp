@@ -39,7 +39,6 @@ while True:
             # but only 1 out of 10 requests...
             response = {}
 
-            #
             response = requests.get("http://api.weather.gov/gridpoints/OKX/51,69/forecast/")
             days = json.loads(response.text)
             name0 = days['properties']['periods'][0]['name']
@@ -79,7 +78,6 @@ while True:
         time.sleep(.5)
         clear()
 
-
     print " "
     if temp1 > 90:
         print "It's going to be over 90!"
@@ -95,7 +93,7 @@ while True:
         print "It's going to be over 70!"
         set_pixel(7, 25, 20, 10)
         show()
-        
+
     if 60 < temp1 <= 70:
         print "It's going to be over 60!"
         set_pixel(6, 20, 20, 10)
