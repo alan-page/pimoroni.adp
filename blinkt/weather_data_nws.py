@@ -81,58 +81,58 @@ while True:
     print " "
     if temp1 > 90:
         print "It's going to be over 90!"
-        set_pixel(7, 30, 0, 0)
+        set_pixel(7, 255, 0, 0)
         show()
 
     if 80 <  temp1 <= 90:
         print "It's going to be over 80!"
-        set_pixel(7, 30, 10, 10)
+        set_pixel(7, 190, 0, 0)
         show()
 
     if 70 < temp1 <= 80:
         print "It's going to be over 70!"
-        set_pixel(7, 25, 20, 10)
+        set_pixel(7, 128, 0, 0)
         show()
 
     if 60 < temp1 <= 70:
         print "It's going to be over 60!"
-        set_pixel(6, 20, 20, 10)
+        set_pixel(6, 128, 64, 0)
         show()
 
     if 50 < temp1 <= 60:
         print "It's going to be mild...winter must be over!"
-        set_pixel(5, 10, 20, 15)
+        set_pixel(5, 128, 128, 0)
         show()
 
     if 40 < temp1 <= 50:
         print "It's going to be almost temperate. Probably sweater weather."
-        set_pixel(4, 0, 20, 15)
+        set_pixel(4, 0, 128, 0)
         show()
 
     if 30 < temp1 <= 40:
         print "It's going to be cold. Better wear a coat."
-        set_pixel(3, 0, 15, 15)
+        set_pixel(3, 0, 128, 128)
         show()
 
     if 20 < temp1 <= 30:
         print "Wear the coat. Better make it a warm coat."
-        set_pixel(2, 0, 10, 15)
+        set_pixel(2, 0, 64, 128)
         show()
 
     if 10 < temp1 <= 20:
         print "Remember that really heavy parka? Bring it."
-        set_pixel(1, 0, 5, 15)
+        set_pixel(1, 0, 0, 128)
         show()
 
     if 0 < temp1 <= 10:
         print "Brr! Bring the parka and wear long underwear..."
-        set_pixel(0, 0, 0, 15)
+        set_pixel(0, 128, 64, 64)
         show()
 
     if temp1 <= 0:
         print "Oh boy! Below zero--add the balaclava."
         for x  in range(5):
-            set_pixel(0, 0, 0, 10)
+            set_pixel(0, 128, 128, 128)
             show()
 
     print " "
