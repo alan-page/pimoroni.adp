@@ -69,6 +69,7 @@ while True:
     show()
 
 # Animation to show which temp we're displaying: upward sweep of the LEDs for the daily high?
+# Downward  sweep for now
 
     for y in range(7, -1, -1):
         set_pixel(y, m[y][0], m[y][1], m[y][2])
