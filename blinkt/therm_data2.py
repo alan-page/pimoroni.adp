@@ -7,10 +7,34 @@ import time
 response = requests.get("http://api.weather.gov/gridpoints/OKX/51,69/forecast/")
 days = json.loads(response.text)
 
-name = days['properties']['periods'][1]['name']
-temp = days['properties']['periods'][1]['temperature']
+for forecast in range(5):
+    print days['properties']['periods'][forecast]
+    print ''
 
-print(name + ": " + str(temp))
+print ''
+
+#ugly docstring multi-line comment
+"""
+forecast0 = days['properties']['periods'][0]
+forecast1 = days['properties']['periods'][1]
+forecast2 = days['properties']['periods'][2]
+
+
+#name = days['properties']['periods'][0]['name']
+#temp = days['properties']['periods'][0]['temperature']
+#print(name + ": " + str(temp)) 
+
+print(forecast0)
+print ' ' 
+print(forecast1)
+print ' '
+print(forecast2)
+print ' ' 
+"""
+#end docstring
+
+
+temp = 35
 
 if temp < 40:
     print "It's going to be cold tomorrow. Better wear a coat."
@@ -39,3 +63,4 @@ if temp < 10:
     show()
     time.sleep(5)
     clear()
+
