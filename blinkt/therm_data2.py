@@ -7,7 +7,7 @@ import time
 response = requests.get("http://api.weather.gov/gridpoints/OKX/51,69/forecast/")
 days = json.loads(response.text)
 
-for forecast in range(5):
+for forecast in range(4):
     print days['properties']['periods'][forecast]
     print ''
 
