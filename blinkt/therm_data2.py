@@ -7,13 +7,24 @@ import time
 response = requests.get("http://api.weather.gov/gridpoints/OKX/51,69/forecast/")
 days = json.loads(response.text)
 
-for forecast in range(4):
-    print days['properties']['periods'][forecast]
+print ''
+print ''
+
+for forecastNum in range(4):
+# Print whole forecoasts
+#    print (days['properties']['periods'][forecastNum]
+
+# Print beginnin and end of forecasts
+    print ('Start: ' + days['properties']['periods'][forecastNum]['startTime']
+        + '     End: ' + days['properties']['periods'][forecastNum]['endTime']
+        + '     ' + days['properties']['periods'][forecastNum]['name'])
     print ''
 
 print ''
 
 #ugly docstring multi-line comment
+#
+#
 """
 forecast0 = days['properties']['periods'][0]
 forecast1 = days['properties']['periods'][1]
