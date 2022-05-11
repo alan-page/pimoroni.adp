@@ -137,7 +137,7 @@ while True:
             show()
 
     print " "
-    print "Next update in 60,000 milliseconds"
+    print "Next update in 60 seconds"
     time.sleep(60)
 
 
