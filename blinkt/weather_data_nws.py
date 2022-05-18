@@ -67,6 +67,8 @@ while True:
 
     clear()
     show()
+# and wait
+    time.sleep(1)
 
 # Animation to show which temp we're displaying: upward sweep of the LEDs for the daily high?
 # Downward  sweep for now
