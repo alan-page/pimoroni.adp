@@ -31,7 +31,7 @@ while True:
             print " "
             print " "
             print " "
-            print "Trying the weather API..."
+            print "Querying the weather API..."
 
             # Had to add this initialization statement after putting the request in a try/catch.
             #
