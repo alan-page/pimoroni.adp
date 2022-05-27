@@ -38,6 +38,7 @@ while True:
             # But it didn't seem to matter. It's as if the API is returning incorrect results,
             # but only 1 out of 10 requests...
             response = {}
+            days = ''
 
             response = requests.get("http://api.weather.gov/gridpoints/OKX/51,69/forecast/")
             days = json.loads(response.text)
