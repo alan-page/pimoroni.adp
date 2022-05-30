@@ -11,10 +11,11 @@ from blinkt import set_pixel, set_brightness, show, clear
 
 #print "import time"
 import time
+import datetime
 
 # LED rgb matrix with zero-based list corresponding to the temp bands
 m = [
-    [128,  64,  64],
+    [128,  32,  32],
     [  0,   0, 128],
     [  0,  64, 128],
     [  0, 128, 128],
@@ -60,6 +61,7 @@ while True:
             print " "
 
 # Print the next forecast block
+    print(datetime.datetime.now())
     print " "
     print(starttime1 + " " +name1 + ": " + str(temp1) + " deg F")
     print("Next forecast:  " + shortforecast1)
