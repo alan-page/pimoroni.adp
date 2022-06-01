@@ -9,8 +9,10 @@ import requests
 #print "import blinkt stuff"
 from blinkt import set_pixel, set_brightness, show, clear
 
-#print "import time"
+#print "import time" for the sleep() function
 import time
+
+#print "import datetime" for the datetime.now() function to display the date/time
 import datetime
 
 # LED rgb matrix with zero-based list corresponding to the temp bands
