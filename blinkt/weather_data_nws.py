@@ -28,7 +28,9 @@ m = [
 ]
 # print m
 
+#Outer loop for displaying weather periodically
 while True:
+    #Inner loop for querying the weather API
     while True:
         try:
             print " "
