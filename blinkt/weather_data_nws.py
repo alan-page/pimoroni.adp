@@ -61,7 +61,7 @@ while True:
             break
         except:
             print " "
-            print "Didn't get a response. Trying again."
+            print "No response. Trying again."
             print " "
 
 # Print the next forecast block
