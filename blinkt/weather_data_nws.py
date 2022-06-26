@@ -88,6 +88,9 @@ while True:
         time.sleep(.03)
         clear()
 
+    show()
+    time.sleep(1)
+
     print " "
     if temp1 > 90:
         print "It's going to be over 90!"
