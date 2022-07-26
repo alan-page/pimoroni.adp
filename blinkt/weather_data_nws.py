@@ -99,7 +99,7 @@ while True:
 
     if 80 <  temp1 <= 90:
         print "It's going to be over 80!"
-        set_pixel(7, 225, 32, 32)
+        set_pixel(7, 225, 16, 16)
         show()
 
     if 70 < temp1 <= 80:
