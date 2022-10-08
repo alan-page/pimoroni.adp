@@ -82,6 +82,7 @@ while True:
 
     for y in range(7, -1, -1):
         set_pixel(y, m[y][0], m[y][1], m[y][2])
+        print y
         show()
 # Print rgb values
 #        print m[y]
