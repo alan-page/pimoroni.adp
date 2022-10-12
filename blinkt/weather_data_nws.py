@@ -59,6 +59,7 @@ while True:
             starttime0 = days['properties']['periods'][0]['startTime']
             starttime1 = days['properties']['periods'][1]['startTime']
             break
+
         except:
             print " "
             print "No response. Trying again."
@@ -78,7 +79,7 @@ while True:
     time.sleep(1)
 
 # Animation to show which temp we're displaying: upward sweep of the LEDs for the daily high?
-# Downward  sweep for now
+# Downward sweep for now
 
     for y in range(7, -1, -1):
         set_pixel(y, m[y][0], m[y][1], m[y][2])
