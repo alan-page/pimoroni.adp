@@ -18,7 +18,7 @@ def show_graph(v, r, g, b):
             r, g, b = [int(min(v, 1.0) * c) for c in [r, g, b]]
         blinkt.set_pixel(x, r, g, b)
         v -= 1
-
+    print "pixel " + str(v)
     blinkt.show()
 
 #blinkt.set_brightness(1)
