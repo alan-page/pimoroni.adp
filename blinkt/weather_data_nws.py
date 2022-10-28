@@ -116,7 +116,11 @@ while True:
 
     if 50 < temp1 <= 60:
         print "It's going to be mild...winter must be over!"
+        # One pixel higher at a lower intensity
+        set_pixel(6, 64, 32, 0) 
         set_pixel(5, 128, 128, 0)
+        # One pixel lower at a lower intensity
+        set_pixel(4, 0, 64, 0)
         show()
 
     if 40 < temp1 <= 50:
