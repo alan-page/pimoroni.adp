@@ -68,7 +68,7 @@ while True:
 # Print the next forecast block
     print(datetime.datetime.now())
     print " "
-    print(starttime1 + " " +name1 + ": " + str(temp1) + " deg F")
+    print(starttime1 + " " +name1 + ": " + str(temp1) + " deg F (" + str(temp0) + " F now)")
     print("Next forecast:  " + shortforecast1)
 
 # Clear the display
