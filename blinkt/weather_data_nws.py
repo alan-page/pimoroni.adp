@@ -155,7 +155,7 @@ while True:
             show()
 
     print " "
-    print "Next update in 60 seconds"
-    time.sleep(60)
+    print "Next update in 10 minutes"
+    time.sleep(600)
 
 
