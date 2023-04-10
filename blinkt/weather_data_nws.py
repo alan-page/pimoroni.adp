@@ -64,6 +64,7 @@ while True:
             print " "
             print "No response. Trying again."
             print " "
+            time.sleep(60)
 
 # Print the next forecast block
     print(datetime.datetime.now())
